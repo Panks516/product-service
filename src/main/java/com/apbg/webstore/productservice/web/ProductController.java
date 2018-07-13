@@ -43,6 +43,11 @@ public class ProductController {
         return (new ResponseEntity(product.get(), HttpStatus.OK));
     }
 
+    @GetMapping("/food")
+    public String getFood(){
+        return "food";
+    }
+
     // Included in the Worker App guide
     @PostMapping("/prices")
     public ResponseEntity updatePrices(@RequestBody List<Double> newPrices) {
