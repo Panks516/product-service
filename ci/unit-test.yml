@@ -17,5 +17,5 @@ run:
   - |
     env
     chmod -R 777 source-code
-    cd source-code/product-service
+    cd source-code/
     ./gradlew test --refresh-dependencies
