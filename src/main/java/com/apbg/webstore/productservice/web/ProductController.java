@@ -43,9 +43,9 @@ public class ProductController {
         return (new ResponseEntity(product.get(), HttpStatus.OK));
     }
 
-    @GetMapping("/food")
-    public String getFood(){
-        return "food";
+    @GetMapping("/water")
+    public String getWater(){
+        return "Need Water!";
     }
 
     // Included in the Worker App guide
