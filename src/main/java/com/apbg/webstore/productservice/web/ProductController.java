@@ -45,7 +45,7 @@ public class ProductController {
 
     @GetMapping("/water")
     public String getWater(){
-        return "Need Water!";
+        
     }
 
     // Included in the Worker App guide
