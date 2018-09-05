@@ -22,6 +22,11 @@ public class ProductController {
         this.productRepository = productRepository;
     }
 
+    @GetMapping("/food")
+    public String getFood(){
+        return "food";
+    }
+
     @GetMapping("/all-products")
     public ResponseEntity getAll() {
         return new ResponseEntity(productRepository.findAll(), HttpStatus.OK);
@@ -42,7 +47,7 @@ public class ProductController {
 
         return (new ResponseEntity(product.get(), HttpStatus.OK));
     }
-    
+
     // Included in the Worker App guide
     @PostMapping("/prices")
     public ResponseEntity updatePrices(@RequestBody List<Double> newPrices) {
